@@ -27,7 +27,7 @@ body {
 
 .menu {
     display: flex;
-    gap: 80px;
+    gap: 5%;
 }
 
 .menu a {
@@ -128,8 +128,28 @@ body {
         padding: 10%;
     }
 
+    .image {
+        width: 80%;
+        padding-bottom: 15%;
+    }
+
+    .title {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .paragraph {
+        font-size: 1.2rem;
+    }
+
+    .buttons a {
+        width: 100%;
+    }
+
     .menu {
         justify-content: center;
+        text-align: center;
+        gap: 5%;
     }
 
     .container {
@@ -139,5 +159,9 @@ body {
 
     .content {
         width: auto;
+    }
+
+    .list {
+        padding: 0 5%;
     }
 }
