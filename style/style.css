@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-primaria: #191919;
+    --cor-secundaria: #ECDBBA;
+    --cor-tercearia: #00c3ff;
+    --cor-hover: #2D4263;
+
+    --fonte-pricipal: "Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    box-sizing: border-box;
+    color: var(--cor-secundaria);
+}
+
+.header {
+    padding: 2% 0 0 15%;
+}
+
+.menu {
+    display: flex;
+    gap: 80px;
+}
+
+.menu a {
+    font-family: var(--fonte-secundaria);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-tercearia);
+}
+
+.container {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+}
+.title {
+    font-family: var(--fonte-pricipal);
+    font-weight: normal;
+    font-size: 2.25rem;
+}
+.title-emphasis {
+    color: var(--cor-tercearia);
+}
+
+.paragraph {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.buttons h2 {
+    font-family: var(--fonte-pricipal);
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.buttons a {
+    font-family: var(--fonte-secundaria);
+    background-color: transparent;
+    border: 2px solid var(--cor-tercearia);
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    padding: 21px 0px;
+    color: var(--cor-secundaria);
+    font-weight: 600;
+    font-size: 1.5rem;
+    width: 50%; 
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.buttons a:hover {
+    transition: .5s;
+    background-color: var(--cor-hover);
+}
+
+.image {
+    width: 50%;
+}
+
+.foot {
+    display: grid;
+    
+    background-color: var(--cor-tercearia);
+    text-align: center;
+    padding: 24px 0;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-secundaria);
+}
+
+/* Curriculo */
+
+.list li a {
+    text-decoration: none;
+    color: var(--cor-tercearia);
+}
+
+
+@media (max-width: 1200px) {
+    .header {
+        padding: 10%;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .content {
+        width: auto;
+    }
+}
